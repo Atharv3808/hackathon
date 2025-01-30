@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Psyche Which Exists In This π/0 Dimension</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap">
+    <script src="https://kit.fontawesome.com/8ea342608c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <div class="light-effect" id="lightEffect"></div>
+    <div class="container">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-message"></i><span>About Us</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i><span>Community</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-box-archive"></i><span>Resources</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i><span>Help</span></a></li>
+        </ul>
+    </nav>
+
+        <img src="Prabal black.png" alt="Your Image" class="profile-pic">
+        <p class="sanskrit">" HACK IT TILL YOU MAKE IT "</p>
+        <div class="timer">
+            <span id="days"></span> days <span id="hours"></span> hours <span id="minutes"></span> minutes <span id="seconds"></span> seconds
+        </div>
+        <a class="glowButton" href="#">REGISTER</a>
+    </div>
+  
+    <section class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>WELCOME TO<br>प्रबल...</h2>
+                <p class="description">
+                    Experience innovation and creativity at Prabal, a 36-hour hackathon organized by GDG at Sanjay Ghodawat University, Kolhapur, from April 11-13, 2025. Collaborate, learn, and compete using Google tools, with workshops, mentorship, and exciting prizes. Register by February 25th, 2025, for just ₹250 per person!
+                </p>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="trophy">
+                    <h1>🏆</h1>
+                </div>
+                <h2>WITH A PRIZE POOL OF</h2>
+                <div class="prize-amount">
+                    <span class="currency">₹</span>
+                    <div class="number-container">
+                        <span class="number" id="hundreds">0</span>
+                        <span class="number" id="thousands">0</span>
+                        <span class="number" id="tenThousands">0</span>
+                        <span class="separator">,</span>
+                        <span class="number" id="lakhs">0</span>
+                        <span class="number" id="tenLakhs">0</span>
+                        <span class="number" id="crores">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </div>  
+    <script>
+        const lightEffect = document.getElementById('lightEffect');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            lightEffect.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+        });
+
+        // Timer function
+        function countdown() {
+            const targetDate = new Date('2025-04-11').getTime();
+            const currentDate = new Date().getTime();
+            const difference = targetDate - currentDate;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }
+
+        // Call the countdown function every second
+        setInterval(countdown, 1000);
+
+         // Final numbers for each position
+  const finalNumbers = {
+    hundreds: 'X',
+    thousands: 0,
+    tenThousands: 0,
+    lakhs: 0,
+    tenLakhs: 0,
+    crores: 0,
+  }
+
+  // Delay between each number animation
+  const delay = 100
+
+  // Function to animate a single number
+  const animateNumber = (elementId, finalNumber, delay) => {
+    const element = document.getElementById(elementId)
+
+    // Add animation class after delay
+    setTimeout(() => {
+      element.classList.add("animate")
+
+      // Generate random numbers before settling on final number
+      let iterations = 0
+      const maxIterations = 10
+      const interval = setInterval(() => {
+        element.textContent = Math.floor(Math.random() * 10)
+        iterations++
+
+        if (iterations === maxIterations) {
+          clearInterval(interval)
+          element.textContent = finalNumber
+        }
+      }, 50)
+    }, delay)
+  }
+
+  // Start animations with increasing delays
+  let currentDelay = 0
+  Object.entries(finalNumbers).forEach(([position, number]) => {
+    animateNumber(position, number, currentDelay)
+    currentDelay += delay
+  })   
+        feather.replace();
+    
+    </script>
+
+</body>
+</html>

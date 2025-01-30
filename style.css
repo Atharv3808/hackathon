@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0b14;
+}
+
+.navbar {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    background: ;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.navbar:hover {
+    width: 200px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+    overflow: visible;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #6a778e;
+    padding: 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.navbar a:hover {
+    background: #406ff3;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navbar i {
+    font-size: 20px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.navbar span {
+    margin-left: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px);
+}
+
+.navbar:hover span {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.container img{
+    width: 40%;
+}
+
+.grid-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, rgba(55, 65, 81, 0.3) 1px, transparent 1px), /* Increased background visibility */
+        linear-gradient(to bottom, rgba(55, 65, 81, 0.3) 1px, transparent 1px); /* Increased background visibility */
+    background-size: 4rem 4rem;
+}
+
+.light-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 0 0, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.sanskrit {
+    font-family: serif;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-top: -37px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.accent {
+    color: #b69eff;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.linkedin-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkedin-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.linkedin-icon {
+    margin-right: 0.5rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 2rem;
+    margin-bottom: 30px ;
+}
+
+.timer span {
+    font-weight: bold;
+    color: #b69eff;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.about {
+    padding: 6rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54%;
+    height: 121%;
+    background-image: url("Prabal black.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.9s ease;
+    margin-right: -73px;
+}
+
+.about-image:hover {
+    transform: rotateY(360deg);
+}
+
+.about-text {
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.about h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color:white;
+}
+
+.platform-logos {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.platform-logos img {
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.platform-logos img:hover {
+    opacity: 1;
+}
+
+.glowButton {
+    position: relative;
+    margin: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(160deg, #ff0000, #ec008c);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 
+      0 0 0 0 #ec008c,
+      0.5rem 0.5rem 30px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.6s;
+    transform: skewX(-20deg);
+    margin-top: 10px;
+  }
+  
+  .glowButton:hover {
+    box-shadow: 
+      0 0 60px 2px #ec008c,
+      0.5rem 0.5rem 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .glowButton::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 10px;
+    background-image: linear-gradient(170deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    pointer-events: none;
+    transform: skewX(-20deg);
+  }
+
+.container4 {
+    text-align: center;
+    padding: 6rem;
+    margin-top: 68px;
+}
+  
+.trophy {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+  
+.trophy img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+  
+.title {
+    color: white;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.trophy h2{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.prize-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #e6b31e;
+    letter-spacing: 0.05em;
+    transition: transform 0.3s ease;
+}
+  
+.prize-amount:hover {
+    transform: scale(1.05);
+}
+
+.number-container {
+    display: flex;
+    align-items: center;
+}
+  
+.number {
+    display: inline-block;
+    width: 0.7em;
+    height: 1.2em;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.1s forwards;
+}
+  
+.number.animate {
+    animation: spin 0.5s ease-out forwards;
+}
+  
+.separator {
+    margin: 0 0.1em;
+}
+  
+.currency {
+    margin-right: 0.1em;
+}
+  
+.plus {
+    margin-left: 0.1em;
+}
+  
+@keyframes spin {
+    0% {
+      transform: translateY(-1000%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+  
+@media (max-width: 768px) {
+    .trophy img {
+      width: 72px;
+      height: 72px;
+    }
+}
