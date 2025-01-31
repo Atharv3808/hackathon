@@ -17,7 +17,29 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #0a0b14;
 }
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Style the video */
+.loader video {
+    max-width: 150%; /* Set size for the loader */
+    max-height: 150%;
+}
+
+/* Hide the video after play */
+.loader video:ended {
+    display: none;
+}
 .navbar {
     position: absolute;
     top: 138px;
@@ -645,9 +667,12 @@ p {
   }
 
 .roadmap{
+    margin: auto;
     color: white;
     margin-left: 40%;
-    margin-top: 125px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
 }
 .container5 {
     display: flex;
@@ -657,7 +682,7 @@ p {
 .box {
     width: 300px; /* Increased width */
     height: 400px; /* Increased height */
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, , );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,7 +697,7 @@ p {
 }
 .box:hover {
     transform: scale(1.1);
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg;
 }
 .box::before {
     content: '';

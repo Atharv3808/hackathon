@@ -3,14 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Psyche Which Exists In This π/0 Dimension</title>
+    <title>PRABAL HACKATHON</title>
+    <link rel="icon" type="image/png" href="Prabal black.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap">
     <script src="https://kit.fontawesome.com/8ea342608c.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <style>
+    #preloader-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 9999;
+    display: none; /* Hide the preloader frame after it has played */
+}
+
+/* Show main content after preloader */
+#main-content {
+    display: none; /* Show the main content after the preloader has finished */
+    text-align: center;
+    padding: 50px;
+}
+     /* Full-screen video container */
+     #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black; /* Fallback background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it's on top */
+        }
+
+        /* Video settings */
+        #preloader video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Hide main content initially */
+        #content {
+            display: none;
+            text-align: center;
+            padding: 50px;
+        }
+
+</style>
+<div id="preloader">
+  <video autoplay muted playsinline id="preloader-video">
+      <source src="render comp (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
     <div class="grid-background"></div>
     <div class="light-effect" id="lightEffect"></div>
     <div class="container">
@@ -77,57 +132,125 @@
               <div class="box"><img src="box3.png" alt="Box 3">Box 3</div>
               <div class="box"><img src="box4.png" alt="Box 4">Box 4</div>
           </div>
-  <!-- The Timeline -->
-<div class="roadmap">
-  <h1>ROADMAP</h1>
+  <div class="roadmap">
+    <h1>ROADMAP</h1>
+  </div>
+  <ul class="timeline">
+
+    <!-- Item 1 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">REGISTRATION START</span>
+          <span class="time-wrapper"><span class="time">10 FEB</span></span>
+        </div>
+        <div class="desc">Register on unstop and other platforms </div>
+      </div>
+    </li>
+    
+    <!-- Item 2 -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="flag">IDEA SUBMISSION</span>
+          <span class="time-wrapper"><span class="time">30feb</span></span>
+        </div>
+        <div class="desc">Submit your ideas</div>
+      </div>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">hackathon Starts</span>
+          <span class="time-wrapper"><span class="time">11 April</span></span>
+        </div>
+        <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+      </div>
+    </li>
+      <!-- Item 2 -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="flag">HACKATHON END</span>
+          <span class="time-wrapper"><span class="time">13 FEB</span></span>
+        </div>
+        <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+      </div>
+    </li>
+  </ul>
+  <div class="container6">
+    <div class="venue-content">
+        <div class="venue-header">
+            <h2>📍</h2>
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h2>VENUE</h2>
+        </div>
+        
+        <h1>Sanjay Ghodawat University,KOLHAPUR</h1>
+        
+        <div class="decorative-x">
+            <div class="line"></div>
+            <span>X</span>
+            <div class="line"></div>
+        </div>
+    </div>
 </div>
-<ul class="timeline">
+<footer class="footer"></footer>
+<div class="footer-content">
+    <div class="footer-brand">
+        <img src="Prabal black.png" alt="Cyberpunk City Logo">
+        <p class="footer-description">
+            Hack It Till You Make It
+        </p>
+    
+    </div>
 
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">REGISTRATION START</span>
-				<span class="time-wrapper"><span class="time">10 FEB</span></span>
-			</div>
-			<div class="desc">Register on unstop and other platforms </div>
-		</div>
-	</li>
+    <div class="footer-links">
+        <h3>QUICK LINKS</h3>
+        <ul>
+            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/whitepaper" class="whitepaper-arrow">WHITEPAPER</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/press">PRESS</a></li>
+            <li><a href="/privacy">PRIVACY POLICY</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-links">
+        <h3>PARTNERSHIP</h3>
+        <p style="color: #9CA3AF;">Interested in working with us?</p>
+        <a href="mailto:gdg.sgu2024@gmail.com" style="color: #fff; text-decoration: none;">
+            gdg.sgu2024@gmail.com
+        </a>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <div class="copyright">
+        Copyright © 2024 PRABAL.
+    </div>
+    <div class="social-links">
+        <a href="#" class="social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Discord">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+        </a>
+    
+    </div>
+</div>
+</footer>
   
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">IDEA SUBMISSION</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-		</div>
-	</li>
-
-	<!-- Item 3 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Harvard University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-			</div>
-			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-		</div>
-	</li>
-  	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-		</div>
-	</li>
-  
-</ul>
-
     <script>
         const lightEffect = document.getElementById('lightEffect');
 
@@ -200,10 +323,23 @@
     currentDelay += delay
   })   
         feather.replace();
-    
-    
+        
+     // Hide loader after video ends
+     document.getElementById("loaderVideo").addEventListener("ended", function () {
+            document.querySelector(".loader").style.display = "none";
+        });
     </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let video = document.getElementById("preloader-video");
 
+        // When the video ends, hide the preloader and show content
+        video.onended = function () {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        };
+    });
+</script>
 
 
 </body>
