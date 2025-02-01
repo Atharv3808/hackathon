@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 * {
     user-select: none;
     -webkit-user-select: none;
@@ -19,6 +20,7 @@ body {
     scroll-behavior: smooth;
     
 }
+
 .loader {
     position: fixed;
     top: 0;
@@ -159,7 +161,6 @@ h1 {
 p {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 2rem;
-    font-size: 1.2rem;
 }
 
  
@@ -219,6 +220,7 @@ p {
     max-width: 50%;
     position: relative;
     z-index: 1;
+    margin-left: -53px;
 }
 
 .about h2 {
@@ -399,6 +401,7 @@ p {
     margin-top: 20px;
     padding: 1em 0;
     list-style-type: none;
+    margin-right: 28%;
   }
   
   .timeline:before {

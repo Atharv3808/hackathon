@@ -153,6 +153,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 22px;
 }
 
 .copyright {
@@ -270,8 +272,9 @@ button {
   }
 
 .box img{
-    width: 113%;
+    width: 80%;
     margin-left: -13px;
+    margin-top: 36px;
 }
 button a{
     color: white;
