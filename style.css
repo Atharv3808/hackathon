@@ -16,6 +16,8 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #0a0b14;
+    scroll-behavior: smooth;
+    
 }
 .loader {
     position: fixed;
@@ -200,19 +202,19 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    width: 54%;
-    height: 121%;
+    width: 43%;
+    height: 42%;
     background-image: url("Prabal black.png");
     background-size: cover;
     background-position: center;
     transition: transform 0.9s ease;
-    margin-right: -73px;
 }
+.about-image img{
+  margin-top: 79%;
+  width: 62%;
+  margin-left: 108px;
 
-.about-image:hover {
-    transform: rotateY(360deg);
 }
-
 .about-text {
     max-width: 50%;
     position: relative;
