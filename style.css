@@ -36,7 +36,7 @@ body {
 
 /* Style the video */
 .loader video {
-    max-width: 150%; /* Set size for the loader */
+    max-width: 100%; /* Set size for the loader */
     max-height: 150%;
 }
 

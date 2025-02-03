@@ -70,6 +70,11 @@
     <div class="light-effect" id="lightEffect"></div>
     <div class="container">
     <nav class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
         <ul>
             <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
             <li><a href="#about1"><i class="fa-solid fa-message"></i><span>About Us</span></a></li>
@@ -356,7 +361,10 @@
             document.getElementById("content").style.display = "block";
         };
     });
-    
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-left');
+    navLinks.classList.toggle('active');
+}
 </script>
   
 </body>
