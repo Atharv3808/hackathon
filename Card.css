@@ -279,3 +279,192 @@ button {
 button a{
     color: white;
 }
+@media (max-width: 768px) {
+  .container img{
+    width: 100%;
+  }
+  .sanskrit {
+    margin-top: -31px;
+        margin-bottom: -23px;
+  }
+  .about {
+  display: flex;
+  }
+  .about-image {
+    width: 324px;
+    height: 220px;
+    margin-right: 19px;
+  }
+  .venue-content h1 {
+    font-size: 1.5rem;
+    margin-right: 85px;
+
+  }
+  .venue-header h2 {
+    
+  
+  }
+  .venue-header {
+    margin-right: 193px;
+  }
+  
+  .decorative-x {
+    margin-left: -174px;
+    width: 330px;
+  }
+  .container5 {
+   display: flow-root;
+   margin-left: 40px;
+
+  }
+  h1 {
+    margin-left: -85px;
+  
+  }
+  .venue-content {
+    margin-right: 0px
+  }
+
+  .timer {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .about h2 {
+    margin-top: 229px;
+    font-size: 3rem;
+    margin-left: 100px;
+
+  }
+.about p {
+  width: 350px;
+  margin-left: 48px;
+  }
+  .about-image img {
+    margin-left: 59px;
+  }
+
+  button {
+    margin-left: 55px;
+  }
+  .number-container {
+    font-size: 3rem;
+  }
+  .currency {
+    font-size: 3rem;
+  }
+  .container4 {
+  color: white;
+  }
+  .trophy h1{
+    margin-left: 9px;
+    font-size: 5rem;
+  }
+  .navbar {
+
+
+  }
+#preloader {
+    width: 125%;
+}
+
+.footer-brand img {
+  margin-left: 21px;
+        margin-top: -61px;
+        width: 78%;
+
+}
+
+
+
+
+
+
+
+
+
+}
+.container0 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 49%;
+  margin-top: -100px;
+
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
