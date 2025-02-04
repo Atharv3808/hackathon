@@ -283,15 +283,14 @@ button a{
   .container img{
     width: 100%;
   }
-  .navbar {
-    display: none;
-}
+
   .sanskrit {
     margin-top: -31px;
         margin-bottom: -23px;
   }
   .about {
-  display: flex;
+    display: flex;
+    margin-top: 88px;
   }
   .about-image {
     width: 324px;
@@ -361,11 +360,7 @@ button a{
   }
   .trophy h1{
     margin-left: 9px;
-    font-size: 5rem;
-  }
-  .navbar {
-
-
+    font-size: 4rem;
   }
 #preloader {
     width: 125%;
@@ -474,46 +469,44 @@ button a{
 
  h2{
   color: white;
+
 }
-.mobilenav{
-  display: none;
+
+.scro{
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
 }
 @media (max-width: 768px) {
- .mobilenav{
-  display: block;
- }
- .button-container {
-  display: flex;
-  background-color:gainsboro;
-  width: 300px;
-  height: 40px;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
+.navbar{
+  margin-left: -26px;
+        margin-top: 20px;
+        position: absolute;
 }
-
-.button {
-  outline: 0 !important;
-  border: 0 !important;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
+.scro {
   justify-content: center;
-  color: #fff;
-  transition: all ease-in-out 0.3s;
-  cursor: pointer;
-  margin-left: 0px;
 }
-
-.button:hover {
-  transform: translateY(-3px);
-}
-
-.icon {
-  font-size: 20px;
-}
-
+.container0 {
+  margin-left: 47%;
 }

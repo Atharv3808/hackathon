@@ -187,10 +187,10 @@ p {
 }
 
 .about {
-    padding: 6rem 1.5rem;
+    padding: 5rem 1.5rem;
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .about-content {
@@ -293,8 +293,9 @@ p {
 
 .container4 {
     text-align: center;
-    padding: 6rem;
-    margin-top: 68px;
+    padding: 2rem;
+    margin-bottom: 12%;
+
 }
   
 .trophy {
@@ -653,11 +654,13 @@ p {
   
   .direction-l .desc,
   .direction-r .desc {
-      position: relative;
-      margin: 1em 1em 0 1em;
-      padding: 1em;
+    position: relative;
+    margin: 1em 2em 0 2em;
+    padding: 1em;
     z-index: 15;
     color: black;
+    border-radius: 10px;
+
   }
   
   }
