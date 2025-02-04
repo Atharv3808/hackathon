@@ -507,6 +507,9 @@ button a{
         position: fixed;
         z-index: 1;
 }
+.ani{
+    display: none
+}
 .scro {
   justify-content: center;
 }
@@ -564,3 +567,14 @@ button a{
           text-align: center;
           padding: 50px;
       }
+      .floating-gif {
+        position: absolute;
+        width: 80px; /* Adjust size as needed */
+        height: auto;
+        animation: float 3s infinite alternate ease-in-out;
+    }
+    
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(10px); }
+    }

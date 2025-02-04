@@ -115,8 +115,17 @@ body {
     z-index: 10;
 }
 
-.container img{
+.container img {
     width: 40%;
+    opacity: 0; /* Start with hidden */
+    animation: fadeIn 2s forwards; /* Apply fade-in animation after loader ends */
+    animation-delay: 7s; /* Delay to ensure it starts after the loader */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
 }
 
 .grid-background {
@@ -204,16 +213,17 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    width: 43%;
+    width: 40%;
     height: 67%;
     background-image: url("Prabal black.png");
     background-size: cover;
     background-position: center;
-    transition: transform 0.9s ease;
+    transition: transform 1.8s ease;
+    margin-right: 20px;
 }
 .about-image img{
   margin-top: 79%;
-  width: 62%;
+  width: 50%;
   margin-left: 108px;
 
 }

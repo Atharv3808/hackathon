@@ -1,197 +1,206 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
     <title>PRABAL HACKATHON</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="Prabal black.png">
+    
+    <!-- External CSS files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap">
+    
+    <!-- External JavaScript libraries -->
     <script src="https://kit.fontawesome.com/8ea342608c.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- <div id="preloader">
-  <video autoplay muted playsinline id="preloader-video">
-      <source src="render comp (1).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <audio autoplay id="preloader-audio">
-      <source src="render.mp3" type="audio/mp3">
-      Your browser does not support the audio tag.
-  </audio>
-</div> -->
-    <div class="grid-background"></div>
-    <div class="light-effect" id="lightEffect"></div>
+
+<!-- Preloader Section -->
+<div id="preloader">
+    <video autoplay muted playsinline id="preloader-video">
+        <source src="render comp (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio autoplay id="preloader-audio">
+        <source src="render.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<!-- Background and Light Effect -->
+<div class="grid-background"></div>
+<div class="light-effect" id="lightEffect"></div>
+
+<!-- Main Container -->
+<div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+            <li><a href="#about1"><i class="fa-solid fa-message"></i><span>About Us</span></a></li>
+            <li><a href="https://gdg.community.dev/gdg-on-campus-sanjay-ghodawat-university-kolhapur-india/"><i class="fa-solid fa-users"></i><span>TEAM</span></a></li>
+            <li><a href="https://heyzine.com/flip-book/35f9128411.html?fbclid=PAY2xjawINi91leHRuA2FlbQIxMQABpp0O7raW6wgV6H_3QEYA9eVHDkOuDkTjQpN4KIK4wB6uHxOj7ta019zsxQ_aem_-1WLTSRFyTXK8pDbg6Zkog#page/2"><i class="fa-solid fa-folder"></i><span>BROCHURE</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-box-archive"></i><span>RULE BOOK</span></a></li>
+            <li><a href="#contact"><i class="fa-solid fa-address-book"></i><span>CONTACT</span></a></li>
+        </ul>
+    </nav>
     
-    <div class="container">
-      <nav class="navbar">
-          <ul>
-              <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-              <li><a href="#about1"><i class="fa-solid fa-message"></i><span>About Us</span></a></li>
-              <li><a href="https://gdg.community.dev/gdg-on-campus-sanjay-ghodawat-university-kolhapur-india/"><i class="fa-solid fa-users"></i><span>TEAM</span></a></li>
-              <li><a href="https://heyzine.com/flip-book/35f9128411.html?fbclid=PAY2xjawINi91leHRuA2FlbQIxMQABpp0O7raW6wgV6H_3QEYA9eVHDkOuDkTjQpN4KIK4wB6uHxOj7ta019zsxQ_aem_-1WLTSRFyTXK8pDbg6Zkog#page/2"><i class="fa-solid fa-folder"></i><span>BROCHURE</span></a></li>
-              <li><a href="#"><i class="fa-solid fa-box-archive"></i><span>RULE BOOK</span></a></li>
-              <li><a href="#contact"><i class="fa-solid fa-address-book"></i><span>CONTACT</span></a></li>
-          </ul>
-      </nav>
-      <img src="Prabal black.png" alt="Your Image" class="profile-pic">
-      <p class="sanskrit">" HACK IT TILL YOU MAKE IT "</p>
-      <div class="timer">
-          <span id="days"></span> days <span id="hours"></span> hours <span id="minutes"></span> minutes <span id="seconds"></span> seconds
-      </div>
-      <a class="glowButton" href="https://unstop.com/o/OZeJAT3?lb=OQv4d6ei&utm_medium=Share&utm_source=WhatsApp">REGISTER</a>
-      
-      <!-- Randomly Placed GIFs -->
-      <img src="Animation - 1738660089575.gif" class="floating-gif" style="top: 10%; left: 10%; height: 170px; width: auto;">
-      <img src="Animation - 1738660764238.gif" class="floating-gif" style="top: 20%; right: 10%;  height: 170px; width: auto;">
-      <img src="ct.gif" class="floating-gif" style="bottom: 20%; left: 15%;  height: 200px; width: auto;">
-      <img src="r.gif" class="floating-gif" style="bottom: 15%; right: 18%;  height: 170px; width: auto;">
-  </div>
-  
-  <a href="#about1" class="scro">
-      <div class="container0">  
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <span class="text">Scroll down</span>
-      </div>
-  </a>
-  
-  <style>
-      .floating-gif {
-          position: absolute;
-          width: 80px; /* Adjust size as needed */
-          height: auto;
-          animation: float 3s infinite alternate ease-in-out;
-      }
-      
-      @keyframes float {
-          0% { transform: translateY(0px); }
-          100% { transform: translateY(10px); }
-      }
-  </style>
-  
-  <div id="about1">
+    <!-- Profile Picture -->
+    <img src="Prabal black.png" alt="Your Image" class="profile-pic">
+    
+    <!-- Sanskrit Quote -->
+    <p class="sanskrit">" HACK IT TILL YOU MAKE IT "</p>
+    
+    <!-- Timer Section -->
+    <div class="timer">
+        <span id="days"></span> days <span id="hours"></span> hours <span id="minutes"></span> minutes <span id="seconds"></span> seconds
+    </div>
+    
+    <!-- Register Button -->
+    <a class="glowButton" href="https://unstop.com/o/OZeJAT3?lb=OQv4d6ei&utm_medium=Share&utm_source=WhatsApp">REGISTER</a>
+    
+    <!-- Randomly Placed GIFs -->
+    <div class="ani">
+        <img src="Animation - 1738660089575.gif" class="floating-gif" style="top: 10%; left: 10%; height: 170px; width: auto;">
+        <img src="Animation - 1738660764238.gif" class="floating-gif" style="top: 20%; right: 10%; height: 170px; width: auto;">
+        <img src="ct.gif" class="floating-gif" style="bottom: 20%; left: 15%; height: 200px; width: auto;">
+        <img src="r.gif" class="floating-gif" style="bottom: 15%; right: 18%; height: 170px; width: auto;">
+    </div>
+</div>
+
+<!-- Scroll Down Indicator -->
+<a href="#about1" class="scro">
+    <div class="container0">  
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">Scroll down</span>
+    </div>
+</a>
+
+<!-- About Section -->
+<div id="about1">
     <section class="about">
         <div class="about-content">
             <div class="about-text">
                 <h2>WELCOME TO<br>प्रबल...</h2>
                 <p class="description">
-                  PRABAL is a prestigious national-level hackathon organized under Google Developers Group (GDG) at Sanjay Ghodawat University, Kolhapur. A platform for innovators, developers, and problem-solvers to tackle real-world challenges.  Encourages participants to integrate Google technologies into their projects. Focuses on innovation, teamwork, and critical problem-solving under time constraints. Helps participants improve their coding, logical thinking, and project execution skills. Brings together students, professionals, and tech enthusiasts from across the country. Offers mentorship from industry experts, guiding participants through problem-solving. Creates opportunities for networking, collaboration, and career growth. Provides hands-on experience with real-world applications.
+                    PRABAL is a prestigious national-level hackathon organized under Google Developers Group (GDG) at Sanjay Ghodawat University, Kolhapur. A platform for innovators, developers, and problem-solvers to tackle real-world challenges. Encourages participants to integrate Google technologies into their projects. Focuses on innovation, teamwork, and critical problem-solving under time constraints. Helps participants improve their coding, logical thinking, and project execution skills. Brings together students, professionals, and tech enthusiasts from across the country. Offers mentorship from industry experts, guiding participants through problem-solving. Creates opportunities for networking, collaboration, and career growth. Provides hands-on experience with real-world applications.
                 </p>
                 <button>
-                  <a href="tel:+9423454488">CONTACT US</a>
-              </button>
-                </div>
+                    <a href="tel:+9423454488">CONTACT US</a>
+                </button>
             </div>
-            <div class="about-image"> 
-              <img src="Copy of GDG On Campus - Horizontal -  Template (1).png" alt="">
-            </div>
+        </div>
+        <div class="about-image"> 
+            <img src="Copy of GDG On Campus - Horizontal -  Template (1).png" alt="">
+        </div>
     </section>
-            <div class="container4">
-                <div class="trophy">
-                    <h1>🏆</h1>
-                </div>
-                <h2>WITH A PRIZE POOL OF</h2>
-                <div class="prize-amount">
-                    <span class="currency">₹</span>
-                    <div class="number-container">
-                        <span class="number" id="hundreds">0</span>
-                        <span class="number" id="thousands">0</span>
-                        <span class="number" id="tenThousands">0</span>
-                        <span class="separator">,</span>
-                        <span class="number" id="lakhs">0</span>
-                        <span class="number" id="tenLakhs">0</span>
-                        <span class="number" id="crores">0</span>
-                        <span class="plus">+</span>
-                    </div>
-                </div>
-            </div> 
-          </div>
-    </section> 
-            <div class="roadmap">
-              <h1>FEATURES</h1>
+    
+    <!-- Prize Pool Section -->
+    <div class="container4">
+        <div class="trophy">
+            <h1>🏆</h1>
+        </div>
+        <h2>WITH A PRIZE POOL OF</h2>
+        <div class="prize-amount">
+            <span class="currency">₹</span>
+            <div class="number-container">
+                <span class="number" id="hundreds">0</span>
+                <span class="number" id="thousands">0</span>
+                <span class="number" id="tenThousands">0</span>
+                <span class="separator">,</span>
+                <span class="number" id="lakhs">0</span>
+                <span class="number" id="tenLakhs">0</span>
+                <span class="number" id="crores">0</span>
+                <span class="plus">+</span>
             </div>
-            <div class="container5">
-              <div class="box"><img src="1.png" alt="Box 1"></div>
-              <div class="box"><img src="2.png" alt="Box 2"></div>
-              <div class="box"><img src="3.png" alt="Box 3"></div>
-              <div class="box"><img src="4.png" alt="Box 4"></div>
-          </div>
-  <div class="roadmap">
+        </div>
+    </div> 
+</div>
+
+<!-- Features Section -->
+<div class="roadmap">
+    <h1>FEATURES</h1>
+</div>
+<div class="container5">
+    <div class="box"><img src="1.png" alt="Box 1"></div>
+    <div class="box"><img src="2.png" alt="Box 2"></div>
+    <div class="box"><img src="3.png" alt="Box 3"></div>
+    <div class="box"><img src="4.png" alt="Box 4"></div>
+</div>
+
+<!-- Roadmap Section -->
+<div class="roadmap">
     <h1>ROADMAP</h1>
-  </div>
-  <ul class="timeline">
+</div>
+<ul class="timeline">
+    <!-- Timeline Items -->
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">REGISTRATION START</span>
+                <span class="time-wrapper"><span class="time">3 FEB - 7 MARCH</span></span>
+            </div>
+            <div class="desc">Register on unstop and other platforms </div>
+        </div>
+    </li>
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">IDEA SUBMISSION</span>
+                <span class="time-wrapper"><span class="time">10 FEB - 25 FEB</span></span>
+            </div>
+            <div class="desc">Submit your ideas</div>
+        </div>
+    </li>
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">SCREENING ROUND</span>
+                <span class="time-wrapper"><span class="time">7 MARCH - 25 MARCH</span></span>
+            </div>
+            <div class="desc">Register on unstop and other platforms </div>
+        </div>
+    </li>
+    <li>
+        <div class="direction-l">
+            <div class="flag-wrapper">
+                <span class="flag">RESULTS ANNOUNCEMENT</span>
+                <span class="time-wrapper"><span class="time">31 MARCH</span></span>
+            </div>
+            <div class="desc">RESULTS ANNOUNCEMENT</div>
+        </div>
+    </li>
+    <li>
+        <div class="direction-r">
+            <div class="flag-wrapper">
+                <span class="flag">HACKATHON START</span>
+                <span class="time-wrapper"><span class="time">11 APRIL - 13 APRIL</span></span>
+            </div>
+            <div class="desc">HACKATHON START</div>
+        </div>
+    </li>
+</ul>
 
-    <!-- Item 1 -->
-    <li>
-      <div class="direction-r">
-        <div class="flag-wrapper">
-          <span class="flag">REGISTRATION START</span>
-          <span class="time-wrapper"><span class="time">3 FEB - 7 MARCH</span></span>
-        </div>
-        <div class="desc">Register on unstop and other platforms </div>
-      </div>
-    </li>
-    
-    <!-- Item 2 -->
-    <li>
-      <div class="direction-l">
-        <div class="flag-wrapper">
-          <span class="flag">IDEA SUBMISSION</span>
-          <span class="time-wrapper"><span class="time">10 FEB - 25 FEB</span></span>
-        </div>
-        <div class="desc">Submit your ideas</div>
-      </div>
-    </li>
-    <!-- Item 1 -->
-    <li>
-      <div class="direction-r">
-        <div class="flag-wrapper">
-          <span class="flag">SCREENING ROUND</span>
-          <span class="time-wrapper"><span class="time">7 MARCH - 25 MARCH</span></span>
-        </div>
-        <div class="desc">Register on unstop and other platforms </div>
-      </div>
-    </li>
-    
-    <!-- Item 3 -->
-    <li>
-      <div class="direction-l">
-        <div class="flag-wrapper">
-          <span class="flag">RESULTS ANNOUNCEMENT</span>
-          <span class="time-wrapper"><span class="time">31 MARCH</span></span>
-        </div>
-        <div class="desc">RESULTS ANNOUNCEMENT</div>
-      </div>
-    </li>
-      <!-- Item 2 -->
-    <li>
-      <div class="direction-r">
-        <div class="flag-wrapper">
-          <span class="flag">HACKATHON START</span>
-          <span class="time-wrapper"><span class="time">11 APRIL - 13 APRIL</span></span>
-        </div>
-        <div class="desc">HACKATHON START</div>
-      </div>
-    </li>
-  </ul>
-
-  <div class="container6">
+<!-- Venue Section -->
+<div class="container6">
     <div class="venue-content">
         <div class="venue-header">
             <h2>📍</h2>
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-            </svg>
             <h2>VENUE</h2>
         </div>
-        
-        <h1>Sanjay Ghodawat University,KOLHAPUR</h1>
-        
+        <h1>Sanjay Ghodawat University, KOLHAPUR</h1>
         <div class="decorative-x">
             <div class="line"></div>
             <span>X</span>
@@ -199,179 +208,140 @@ d<!DOCTYPE html>
         </div>
     </div>
 </div>
+
+<!-- Footer Section -->
 <footer class="footer">
-<div class="footer-content">
-    <div class="footer-brand">
-        <img src="Prabal black.png" alt="Cyberpunk City Logo">
-        <p class="footer-description">
-            Hack It Till You Make It
-        </p>
-    
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="Prabal black.png" alt="Cyberpunk City Logo">
+            <p class="footer-description">
+                Hack It Till You Make It
+            </p>
+        </div>
+        <div class="footer-links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="/blog">HOME</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/press">RULE BOOK</a></li>
+                <li><a href="/privacy">PRIVACY POLICY</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>SPONSERSHIP</h3>
+            <p style="color: #9CA3AF;">Interested in working with us?</p>
+            <a href="mailto:gdg.sgu2024@gmail.com" style="color: #fff; text-decoration: none;">
+                gdg.sgu2024@gmail.com
+            </a>
+        </div>
     </div>
-
-    <div class="footer-links">
-        <h3>QUICK LINKS</h3>
-        <ul>
-            <li><a href="/blog">HOME</a></li>
-            <li><a href="/contact">CONTACT</a></li>
-            <li><a href="/press">RULE BOOK</a></li>
-            <li><a href="/privacy">PRIVACY POLICY</a></li>
-        </ul>
+    <div id="contact">
+        <div class="footer-bottom">
+            <div class="copyright">
+                Copyright © 2024 PRABAL.
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gdg.prabal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/gdg-sgu/" class="social-link" aria-label="Discord">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <div class="footer-links">
-        <h3>SPONSERSHIP</h3>
-        <p style="color: #9CA3AF;">Interested in working with us?</p>
-        <a href="mailto:gdg.sgu2024@gmail.com" style="color: #fff; text-decoration: none;">
-            gdg.sgu2024@gmail.com
-        </a>
-    </div>
-</div>
-<div id="contact">
-<div class="footer-bottom">
-    <div class="copyright">
-        Copyright © 2024 PRABAL.
-    </div>
-    <div class="social-links">
-        <a href="https://www.instagram.com/gdg.prabal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Twitter">
-        <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/gdg-sgu/" class="social-link" aria-label="Discord">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#" class="social-link" aria-label="Telegram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2z"/></svg>
-        </a>
-        <a href="#" class="social-link" aria-label="YouTube">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
-        </a>
-    
-    </div>
-</div>
-</div>
 </footer>
-  
-    <script>
-        const lightEffect = document.getElementById('lightEffect');
 
-        document.addEventListener('mousemove', (e) => {
-            const x = e.clientX;
-            const y = e.clientY;
-            lightEffect.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
-        });
+<!-- JavaScript for Interactive Elements -->
+<script>
+    // Light Effect on Mouse Move
+    const lightEffect = document.getElementById('lightEffect');
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        lightEffect.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+    });
 
-        // Timer function
-        function countdown() {
-            const targetDate = new Date('2025-04-11').getTime();
-            const currentDate = new Date().getTime();
-            const difference = targetDate - currentDate;
+    // Countdown Timer
+    function countdown() {
+        const targetDate = new Date('2025-04-11').getTime();
+        const currentDate = new Date().getTime();
+        const difference = targetDate - currentDate;
 
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-        }
+        document.getElementById('days').innerText = days;
+        document.getElementById('hours').innerText = hours;
+        document.getElementById('minutes').innerText = minutes;
+        document.getElementById('seconds').innerText = seconds;
+    }
+    setInterval(countdown, 1000);
 
-        // Call the countdown function every second
-        setInterval(countdown, 1000);
+    // Prize Pool Number Animation
+    const finalNumbers = {
+        hundreds: 'X',
+        thousands: 0,
+        tenThousands: 0,
+        lakhs: 0,
+        tenLakhs: 0,
+        crores: 0,
+    }
+    const delay = 100;
+    const animateNumber = (elementId, finalNumber, delay) => {
+        const element = document.getElementById(elementId);
+        setTimeout(() => {
+            element.classList.add("animate");
+            let iterations = 0;
+            const maxIterations = 10;
+            const interval = setInterval(() => {
+                element.textContent = Math.floor(Math.random() * 10);
+                iterations++;
+                if (iterations === maxIterations) {
+                    clearInterval(interval);
+                    element.textContent = finalNumber;
+                }
+            }, 50);
+        }, delay);
+    }
+    let currentDelay = 0;
+    Object.entries(finalNumbers).forEach(([position, number]) => {
+        animateNumber(position, number, currentDelay);
+        currentDelay += delay;
+    });
 
-         // Final numbers for each position
-  const finalNumbers = {
-    hundreds: 'X',
-    thousands: 0,
-    tenThousands: 0,
-    lakhs: 0,
-    tenLakhs: 0,
-    crores: 0,
-  }
-
-  // Delay between each number animation
-  const delay = 100
-
-  // Function to animate a single number
-  const animateNumber = (elementId, finalNumber, delay) => {
-    const element = document.getElementById(elementId)
-
-    // Add animation class after delay
-    setTimeout(() => {
-      element.classList.add("animate")
-
-      // Generate random numbers before settling on final number
-      let iterations = 0
-      const maxIterations = 10
-      const interval = setInterval(() => {
-        element.textContent = Math.floor(Math.random() * 10)
-        iterations++
-
-        if (iterations === maxIterations) {
-          clearInterval(interval)
-          element.textContent = finalNumber
-        }
-      }, 50)
-    }, delay)
-  }
-
-  // Start animations with increasing delays
-  let currentDelay = 0
-  Object.entries(finalNumbers).forEach(([position, number]) => {
-    animateNumber(position, number, currentDelay)
-    currentDelay += delay
-  })   
-        feather.replace();
-        
-     // Hide loader after video ends
-     document.getElementById("loaderVideo").addEventListener("ended", function () {
-            document.querySelector(".loader").style.display = "none";
-        });
-    </script>
-   <script>
+    // Preloader Video and Audio Handling
     document.addEventListener("DOMContentLoaded", function () {
         let video = document.getElementById("preloader-video");
+        let audio = document.getElementById("preloader-audio");
 
-        // When the video ends, hide the preloader and show content
+        function playAudio() {
+            audio.play().catch(error => console.log("Audio autoplay blocked, user interaction needed."));
+            document.removeEventListener("click", playAudio);
+            document.removeEventListener("touchstart", playAudio);
+        }
+
+        document.addEventListener("click", playAudio);
+        document.addEventListener("touchstart", playAudio);
+
+        video.onplay = function () {
+            audio.play();
+        };
+
         video.onended = function () {
             document.getElementById("preloader").style.display = "none";
-            document.getElementById("content").style.display = "block";
+            audio.pause();
+            audio.currentTime = 0;
         };
     });
-    function toggleMenu() {
-    const navLinks = document.querySelector('.nav-left');
-    navLinks.classList.toggle('active');
-}
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      let video = document.getElementById("preloader-video");
-      let audio = document.getElementById("preloader-audio");
-
-      // Function to play audio after user interaction
-      function playAudio() {
-          audio.play().catch(error => console.log("Audio autoplay blocked, user interaction needed."));
-          document.removeEventListener("click", playAudio);
-          document.removeEventListener("touchstart", playAudio);
-      }
-
-      // Attach user interaction event listeners
-      document.addEventListener("click", playAudio);
-      document.addEventListener("touchstart", playAudio);
-
-      // Sync audio with video when the video starts playing
-      video.onplay = function () {
-          audio.play();
-      };
-
-      // When the video ends, stop the audio and hide the preloader
-      video.onended = function () {
-          document.getElementById("preloader").style.display = "none";
-          audio.pause();
-          audio.currentTime = 0; // Reset audio
-      };
-  });
 </script>
 </body>
 </html>
