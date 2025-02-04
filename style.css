@@ -45,7 +45,7 @@ body {
     display: none;
 }
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 138px;
     left: 20px;
     background: ;
@@ -55,6 +55,7 @@ body {
     width: 70px;
     overflow: hidden;
     transition: width 0.3s ease;
+    z-index: 1;
 }
 
 .navbar:hover {
@@ -571,6 +572,7 @@ p {
   .timeline {
        width: 100%;
       padding: 4em 0 1em 0;
+      z-index: 0;
   }
   
   .timeline li {
@@ -654,16 +656,16 @@ p {
   
   .direction-l .desc,
   .direction-r .desc {
-    position: relative;
-    margin: 1em 2em 0 2em;
-    padding: 1em;
-    z-index: 15;
-    color: black;
-    border-radius: 10px;
-
+             position: relative;
+        margin: 1em 2em 0 2em;
+        padding: 1em;
+        z-index: 15;
+        color: black;
+        border-radius: 10px;
+    }
   }
   
-  }
+  
   
   @media screen and (min-width: 400px ?? max-width: 660px) {
   
