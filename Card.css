@@ -283,6 +283,9 @@ button a{
   .container img{
     width: 100%;
   }
+  .navbar {
+    display: none;
+}
   .sanskrit {
     margin-top: -31px;
         margin-bottom: -23px;
@@ -472,6 +475,45 @@ button a{
  h2{
   color: white;
 }
-.fa-linkedin {
-  
+.mobilenav{
+  display: none;
+}
+@media (max-width: 768px) {
+ .mobilenav{
+  display: block;
+ }
+ .button-container {
+  display: flex;
+  background-color:gainsboro;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
 }
