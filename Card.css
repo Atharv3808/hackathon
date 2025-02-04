@@ -510,3 +510,8 @@ button a{
 .container0 {
   margin-left: 47%;
 }
+.glowButton {
+  padding-right: 2rem;
+    padding-left: 2rem;
+}
+}
